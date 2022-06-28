@@ -1,5 +1,3 @@
-import { MovementProperties } from './MovementProperties';
-
 export interface SelectProperties {
     NameSelect: string,
     UrlQuery: string,

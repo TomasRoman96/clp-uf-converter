@@ -3,6 +3,7 @@ import './App.css'
 import ButtonComponent from './components/ButtonComponent';
 import SelectComponent from './components/SelectComponent';
 import { MovementProperties } from './interfaces/MovementProperties';
+import TableComponent from './components/TableComponent';
 
 let URLBackend = "http://localhost:4000";
 

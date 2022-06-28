@@ -10,7 +10,7 @@ const Select = ({ NameSelect, UrlQuery, useStateObject, useStateSet}: SelectProp
       useStateSet({ ...useStateObject, [NameSelect]: parseInt(e.target.value)});
   }
   useEffect(() => {
-    axios.get(`${UrlQuery}`).then((res) => {
+    axios.get<ObjProperties[]>(`${UrlQuery}`).then((res) => {
       const { data } = res;
       setNamesArray(data);
     });
